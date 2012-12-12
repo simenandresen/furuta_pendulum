@@ -1,0 +1,6 @@
+'diff(%theta[1],t,2) = -((sin(%theta[2])*(-L[1]*cos(%theta[2])*g-L[1]*('diff(%theta[1],t,1))^2*cos(%theta[2])^2)+L[1]*L[2]^2*sin(%theta[1])*('diff(%theta[2],t,1))^2+2*L[2]^3*'diff(%theta[1],t,1)*cos(%theta[2])*sin(%theta[2])*'diff(%theta[2],t,1))*m-L[2]*%tau)/(L[2]*J1+(L[1]^2*L[2]*sin(%theta[2])-L[1]^2*cos(%theta[2])^2)*m);
+
+------Equation ending-------
+'diff(%theta[2],t,2) = (sin(%theta[2])*(g+('diff(%theta[1],t,1))^2*cos(%theta[2]))*J1+(sin(%theta[2])^2*(L[1]^2*g+L[1]^2*('diff(%theta[1],t,1))^2*cos(%theta[2]))-L[1]^2*L[2]*sin(%theta[1])*cos(%theta[2])*('diff(%theta[2],t,1))^2-2*L[1]*L[2]^2*'diff(%theta[1],t,1)*cos(%theta[2])^2*sin(%theta[2])*'diff(%theta[2],t,1))*m+L[1]*cos(%theta[2])*%tau)/(L[2]*J1+(L[1]^2*L[2]*sin(%theta[2])-L[1]^2*cos(%theta[2])^2)*m);
+
+------Equation ending-------

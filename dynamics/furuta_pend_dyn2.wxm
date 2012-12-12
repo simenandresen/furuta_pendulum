@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.5 ] */
+
+/* [wxMaxima: input   start ] */
+f1:
+(J_1+m*L_1^2 + m*L_2^2*(sin(x_4))^2)*x1_dot - m*L_1*L_2*x2_dot*cos(x_4)
++ 2*m*L_2^2*x_1*x_2*sin(x_4)*cos(x_4) +m*L_1*L_2*x_2^2*sin(x_4)=%tau;
+
+f2:
+m*L_2^2*x2_dot - m*L_1*L_2*x1_dot*cos(x_4) - m*L_2^2*sin(x_4)*cos(x_4)*x_1^2-m*g*L_2*sin(x_4) = 0;
+
+solve([f1,f2],[x1_dot,x2_dot]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+¦¦
+/* [wxMaxima: input   end   ] */
+
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

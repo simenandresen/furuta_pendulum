@@ -1,0 +1,64 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.5 ] */
+
+/* [wxMaxima: input   start ] */
+remfunction(all); remvalue(all);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+f1:
+(J1+m*L[1]^2*sin(x[4]))*x1 - m*L[1]*x2*cos(x3)+2*m*L[2]^2*x1*x2*sin(x4)*cos(x4)+
+m*L[1]*L[2]*x2^2*sin(x[3])=%tau;
+
+f2:
+m*L[2]^2*x[2]-m*L[1]*L[2]*x1*cos(x4)-m*L[2]*sin(x4)*cos(x4)*x1^2-m*g*L[2]*sin(x4)=0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+remfunction(all);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+remvalue(all);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solution:solve([f1,f2],[x[1], x[2]]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+'
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+stringout("/home/simena/programming/projects/3d_animation_pendulum/dynamics/solution_dynamics",solution[1][1], solution[1][2]); 
+? stringout;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+? do;
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+? solve;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+1+1=2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solution:solve([x+3-y*4=0, y^2+x=5], [x,y]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solution[1][1];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(2);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
